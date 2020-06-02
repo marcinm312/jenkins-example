@@ -1,11 +1,9 @@
 package pl.marcinm312.jenkinsexample;
 
-import static org.junit.Assert.*;
+import static org.junit.Assert.assertEquals;
 
 import org.junit.jupiter.api.Test;
-import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
 class JenkinsExampleApplicationTests2 {
 
 	@Test
