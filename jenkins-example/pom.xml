@@ -49,7 +49,7 @@
 				<configuration>
 					<appName>spring-jenkins-example</appName>
 					<processTypes>
-						<web>java -jar -Dserver.port=$PORT jenkins-example/target/${project.build.finalName}.jar</web>
+						<web>java -jar -Dserver.port=$PORT target/${project.build.finalName}.jar</web>
 					</processTypes>
 				</configuration>
 			</plugin>
