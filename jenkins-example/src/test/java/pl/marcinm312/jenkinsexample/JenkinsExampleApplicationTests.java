@@ -31,7 +31,7 @@ class JenkinsExampleApplicationTests {
 
 	@Test
 	void shouldReturnDefaultMessage() throws Exception {
-		this.mockMvc.perform(get("/")).andDo(print()).andExpect(status().isOk()).andExpect(content().string("hello"));
+		this.mockMvc.perform(get("/")).andDo(print()).andExpect(status().isOk()).andExpect(content().string("test"));
 	}
 
 }
