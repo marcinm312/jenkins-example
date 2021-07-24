@@ -1,11 +1,11 @@
 package pl.marcinm312.jenkinsexample;
 
-import static org.junit.Assert.assertEquals;
 import static org.springframework.test.web.servlet.request.MockMvcRequestBuilders.get;
 import static org.springframework.test.web.servlet.result.MockMvcResultHandlers.print;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.content;
 import static org.springframework.test.web.servlet.result.MockMvcResultMatchers.status;
 
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.autoconfigure.web.servlet.AutoConfigureMockMvc;
@@ -24,9 +24,9 @@ class JenkinsExampleApplicationTests {
 	}
 
 	@Test
-	public void added() {
+	void added() {
 		JenkinsExampleApplication jexampleApplication = new JenkinsExampleApplication();
-		assertEquals(10, jexampleApplication.added(5, 5));
+		Assertions.assertEquals(10, jexampleApplication.added(5, 5));
 	}
 
 	@Test
