@@ -8,23 +8,17 @@ pipeline {
 	stages {
 		stage('Build') {
 			steps {
-				dir("jenkins-example"){
-				    bat "mvn clean compile"
-				}
+                bat "mvn clean compile"
 			}
 		}
 		stage('Test') {
 			steps {
-				dir("jenkins-example"){
-					bat "mvn test"
-				}
+                bat "mvn test"
 			}
 		}
 		stage('Deploy') {
 			steps {
-				dir("jenkins-example"){
-					bat "mvn clean heroku:deploy" 
-				}
+                bat "mvn clean heroku:deploy"
 			}
 		}
 	}
